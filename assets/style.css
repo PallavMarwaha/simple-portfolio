@@ -1,0 +1,96 @@
+:root {
+    --bg: #222128;
+    --text : #ccc;
+    --link : #f2777a;
+    --red: #f2777a;
+}
+
+* { 
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    max-width: 70ch;
+    margin: 0 auto;
+    font-family: Monaco ,Courier, monospace;;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header a {
+    padding: 0 .5rem
+}
+
+
+
+summary {
+    text-align: left;
+    
+}
+
+footer {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #35343e;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red);
+    
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: var(--red);
+    text-align: left;
+}
+
+
+span:hover, .hoverEffect:hover {
+    background-color: rgb(225, 147, 147);
+    color: #222128;
+    text-align: left;
+}
+
+.bigContainer {
+    /* text-align: center; */
+    display: flex;
+}
+
+.info, .bookPosts {
+    padding: 1rem;
+}
+
+.info {
+    flex: 2;
+}
+
+.bookPosts {
+    flex: 1;
+}
+
+
+ul.booksUl {
+    /* display: inline; */
+}
+
+
+
