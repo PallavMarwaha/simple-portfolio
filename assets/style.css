@@ -3,6 +3,7 @@
     --text : #ccc;
     --link : #f2777a;
     --red: #f2777a;
+    --bg-mid : #35343e;
 }
 
 * { 
@@ -19,6 +20,11 @@ body {
     line-height: 1.6;
 }
 
+pre {
+    line-height: normal;
+    font-size: 1rem;
+}
+
 p {
     text-align: justify;
 }
@@ -28,6 +34,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--bg-mid);
 }
 
 header a {
@@ -41,7 +48,7 @@ summary {
     
 }
 
-footer {
+footer > p {
     text-align: center;
     border-radius: 8px;
     background-color: #35343e;
@@ -70,12 +77,16 @@ span:hover, .hoverEffect:hover {
     text-align: left;
 }
 
+ul {
+    list-style-type: "--";
+}
+
 .bigContainer {
     /* text-align: center; */
     display: flex;
 }
 
-.info, .bookPosts {
+.info, .contactPosts {
     padding: 1rem;
 }
 
@@ -83,14 +94,14 @@ span:hover, .hoverEffect:hover {
     flex: 2;
 }
 
-.bookPosts {
+.contactPosts {
     flex: 1;
 }
 
-
-ul.booksUl {
-    /* display: inline; */
+.contactList > li {
+    padding: 0.5rem;
 }
+
 
 
 
