@@ -20,11 +20,15 @@
       <div class="info">
         <h3><span>#about</span></h3>
 
+        <div class="typewriter" style="width: fit-content; text-align: center; margin: 0 auto" id="typewriter">
+          <h1 style="font-size: 1.5rem">Hi! I'm Pallav Marwaha</h1>
+        </div>
+
         <summary>
           <p>
-            Hi! I'm Pallav Marwaha <span class="wave">&#x270C;</span>, a freshly post graduated computer science student with a lot of varied
-            interests. I love minimalism, hence <span class="color-underline">this</span> minimal website without using any major CSS frameworks or
-            JS. I like programming, soft rock, and books.
+            a freshly post graduated computer science student with a lot of varied interests. I love minimalism, hence
+            <span class="color-underline">this</span> minimal website without using any major CSS frameworks or JS. I like programming, soft rock, and
+            books.
           </p>
           <p>
             I'm enthusiastic about web backend development and I have some internship experience in
@@ -82,5 +86,14 @@
         </ul>
       </div>
     </div>
+
+    <script>
+      const typingAnimationDiv = document.getElementById("typewriter");
+
+      // For mobile screen
+      typingAnimationDiv.addEventListener("animationend", function (e) {
+        e.target.style.whiteSpace = "unset";
+      });
+    </script>
   </body>
 </html>
