@@ -52,11 +52,7 @@ summary {
     
 }
 
-footer > p {
-    text-align: center;
-    border-radius: 8px;
-    background-color: #35343e;
-}
+
 
 a {
     color: var(--link);
@@ -85,10 +81,6 @@ ul {
     list-style-type: "--";
 }
 
-.bigContainer {
-    /* text-align: center; */
-    display: flex;
-}
 
 .info, .contactPosts {
     padding: 1rem;
@@ -154,7 +146,7 @@ span.color-underline:hover {
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: 3px solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -174,3 +166,68 @@ span.color-underline:hover {
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+
+/* Terminal window */
+
+.terminal-container {
+    margin: 1rem auto;
+}
+
+.terminal-container, .terminal-container * {
+    font-family: Monaco ,Courier, monospace;
+    font-size: 1rem;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+
+    background-color: rgb(157, 154, 154);
+    padding: 0.3rem;
+}
+
+.terminal-header > .red-button {
+    width: 12px;
+    height: 12px;
+    background-color: #f96256;
+    border-radius: 50%;
+}
+
+.terminal-header > .yellow-button {
+    width: 12px;
+    height: 12px;
+    background-color: #fdbc3d;;
+    border-radius: 50%;
+}
+
+.terminal-header > .green-button {
+    width: 12px;
+    height: 12px;
+    background-color: #2dbb41;
+    border-radius: 50%;
+}
+
+.terminal-window {
+    background-color: #33313f;
+    padding: 1rem;
+}
+
+.terminal-window > .statement {
+    margin: 0.8rem auto;
+}
+
+.terminal-window > .statement > .cursor-statement > .blinking-cursor {
+    border-bottom: 3px solid var(--link);
+    animation: blink-caret .75s infinite;
+    margin-top: 2px;
+}
+
+.terminal-window > .statement > .return-statement > span {
+    color: var(--red);
+} 
+
+.terminal-window > .statement > .return-statement > span:hover {
+    all: unset
+} 

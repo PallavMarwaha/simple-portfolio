@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>pallav's page</title>
+    <title>Pallav's portfolio</title>
   </head>
   <body>
     <header>
@@ -23,6 +23,43 @@
         <div class="typewriter" style="width: fit-content; text-align: center; margin: 0 auto" id="typewriter">
           <h1 style="font-size: 1.5rem">Hi! I'm Pallav Marwaha</h1>
         </div>
+
+        <!-- Terminal window -->
+        <section class="terminal-container">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="red-button"></div>
+              <div class="yellow-button"></div>
+              <div class="green-button"></div>
+            </div>
+
+            <div class="terminal-window">
+              <div class="statement">
+                <div class="input-statement">&#62; Pallav.currentLocation</div>
+                <div class="return-statement"><span>Punjab, India</span></div>
+              </div>
+
+              <div class="statement">
+                <div class="input-statement">&#62; Pallav.contactInfo</div>
+                <div class="return-statement">
+                  ["<a href="mailto:pallav.marwah@gmail.com">Email</a>", "<a href="https://in.linkedin.com/in/pallav-marwaha">LinkedIn</a>", "<a
+                    href="https://github.com/PallavMarwaha"
+                    >Github</a
+                  >"]
+                </div>
+              </div>
+
+              <div class="statement">
+                <div class="input-statement">&#62; Pallav.skills</div>
+                <div class="return-statement"><span>["Python", "Django", "Flask", "Django REST Framework", "React"]</span></div>
+              </div>
+
+              <div class="statement">
+                <div class="cursor-statement">&#62; <span class="blinking-cursor">&#160;</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <summary>
           <p>
@@ -78,13 +115,14 @@
         </div>
       </div>
 
-      <div class="contactPosts">
-        <h3><span>#you can find me on:</span></h3>
-        <ul class="contactList">
+      <footer class="footer">
+        <h3>#you can find me on:</h3>
+        <ul>
+          <li><a href="mailto:pallav.marwah@gmail.com">email</a></li>
           <li><a href="https://in.linkedin.com/in/pallav-marwaha" class="hoverEffect">linked-in</a></li>
           <li><a href="https://github.com/PallavMarwaha" target="_blank" class="hoverEffect">github</a></li>
         </ul>
-      </div>
+      </footer>
     </div>
 
     <script>
